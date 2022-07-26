@@ -37,7 +37,4 @@ async function speak(voice, text) {
         }, 1000);
     });
 }
-(async () => {
-    let res = await speak("TM:fm4h94vk4eem", "this is Artificial Intelligence");
-    console.log(res);
-})();
+exports.speak = speak;
